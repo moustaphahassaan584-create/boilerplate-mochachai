@@ -64,11 +64,11 @@ suite('Unit Tests', function () {
     });
     // #9
     test('#isBelow, #isAtLeast', function () {
-      assert.isAtLeast('world'.length, 5);
-      assert.isBelow(2 * Math.random(), 0 + 2);
-      assert.isBelow(5 % 2, 2);
-      assert.isAtLeast(2 / 3, 1 - 1);
-    });
+  assert.isAtLeast('world'.length, 5);
+  assert.isAtLeast(2 * Math.random(), 0);
+  assert.isBelow(5 % 2, 2);
+  assert.isBelow(2 / 3, 1);
+});
     // #10
     test('#approximately', function () {
       assert.approximately(weirdNumbers(0.5), 1, 0.5);
